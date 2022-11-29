@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size:70%;
+}
+
+.logo{
+    position: absolute;
+    left: 200px;
+    top: 75px;
+}
+
+.main{
+    position: absolute;
+    right: 0px;
+    max-width: 100%;
+    width: 740px;
+    visibility: visible;
+}
+
+.main2{
+    visibility: hidden;
+}
+
+.title1{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 75px;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    color: hsl(0, 36%, 70%);
+}
+
+.title2{
+    position: absolute;
+    left: 200px;
+    top: 280px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 75px;
+    width: 100px;
+    letter-spacing: 20px;
+    color: hsl(0, 6%, 24%);
+}
+
+.description{
+    position: absolute;
+    left: 200px;
+    top: 470px;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 550px;
+    font-size: 20px;
+    line-height: 30px;
+    color: hsl(0, 36%, 70%);
+}
+
+/* Boton suscripción */
+
+.correo{
+    position: absolute;
+    left: 200px;
+    top: 700px;
+    width: 420px;
+    height:55px;
+    border-radius: 30px;
+    border: 1px solid hsl(0, 36%, 70%);
+    background-color: transparent;
+    outline: none;
+    padding-left: 20px;
+}
+
+input::placeholder{
+    color: hsla(0, 36%, 70%, 0.603);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.boton{
+    position: absolute;
+    left: 550px;
+    top: 700px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.11);
+}
+
+
+.boton:hover{
+    background: linear-gradient(135deg, hsl(0, 61%, 90%), hsl(0, 68%, 82%));
+}
+
+
+/* error Correo */
+
+.errorBorde{
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+.correoError{
+    visibility: hidden;
+}
+
+.error1{
+    position: absolute;
+    left: 225px;
+    top: 80%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 93%, 68%);
+}
+
+.imgError{
+    visibility: hidden;
+}
+
+.error2{
+    position: absolute;
+    left: 515px;
+    top: 74%;
+}
+
+
+
+/* other devices */
+
+/* 1440px */
+@media (max-width: 1440px){
+    .logo{
+        left: 120px;
+    }
+
+    .title1{
+        left: 120px;
+        font-size: 70px;
+    }
+
+    .title2{
+        left: 120px;
+        font-size: 70px;
+    }
+    
+    .description{
+        left: 120px;
+        font-size: 18px;
+        width: 500px;
+    }
+
+    .correo{
+        left: 120px;
+    }
+
+    .boton{
+        left: 450px;
+    }
+
+    .error1{
+        left: 140px;
+        top: 85%;
+    }
+
+    .error2{
+        left: 420px;
+        top: 79.4%;
+    }
+    
+
+}
+
+/* 375px */
+@media (max-width: 375px){
+    .main{
+        visibility:hidden;
+    }
+
+    .main2{
+        visibility: visible;
+        margin-top: 80px;
+    }
+
+    body{
+        background-position: 70%;
+        background-size:250%;
+    }
+
+    .logo{
+        left: 30px;
+        top: 30px;
+        width: 110px;
+    }
+
+    .title1{
+        left: 95px;
+        top: 350px;
+        font-size: 35px;
+    }
+
+    .title2{
+        display: flex;
+        justify-content: center;
+        left: 150px;
+        top: 390px;
+        font-size: 35px;
+        letter-spacing: 15px;
+        text-align: center;
+    }
+
+    .description{
+        display: flex;
+        justify-content: flex-start;
+        left: 30px;
+        top: 462px;
+        text-align: center;
+        font-size: 15px;
+        width: 320px;
+        line-height: 24px;
+    }
+
+    .correo{
+        left: 30px;
+        top: 570px;
+        width: 300px;
+        height:50px;
+    }
+
+    .boton{
+        left: 270px;
+        top: 570px;
+        padding: 13px 25px 14px 25px;
+    }
+
+    .error1{
+        left: 50px;
+        top: 95%;
+    }
+
+    .error2{
+        left: 240px;
+        top: 87.4%;
+    }
+}
+
